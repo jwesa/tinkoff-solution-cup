@@ -1,1 +1,1 @@
-export type { IParams } from './types';
+export type { IParams } from "./types";
