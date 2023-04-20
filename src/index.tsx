@@ -10,7 +10,7 @@ import { rootStore, StoreProvider } from "./store";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={"/tinkoff-solution-cup"}>
     <React.StrictMode>
       <StoreProvider value={rootStore}>
         <App />
