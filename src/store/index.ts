@@ -1,1 +1,1 @@
-export { RootStoreContext } from './rootStore';
+export { rootStore, RootStoreContext, StoreProvider } from './rootStore';
