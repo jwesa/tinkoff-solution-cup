@@ -1,3 +1,6 @@
-export const App = () => {
-	return <div></div>;
-};
+import React from "react";
+import { observer } from "mobx-react-lite";
+
+export const App = observer(() => {
+  return <></>;
+});

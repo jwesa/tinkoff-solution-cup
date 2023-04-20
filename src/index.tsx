@@ -1,20 +1,20 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-import './index.css';
+import "./index.css";
 
-import { App } from './App';
+import { App } from "./App";
 
-import { rootStore, StoreProvider } from './store';
+import { rootStore, StoreProvider } from "./store";
 
-const root = createRoot(document.getElementById('root') as HTMLElement);
+const root = createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-	<BrowserRouter>
-		<React.StrictMode>
-			<StoreProvider value={rootStore}>
-				<App />
-			</StoreProvider>
-		</React.StrictMode>
-	</BrowserRouter>
+  <BrowserRouter>
+    <React.StrictMode>
+      <StoreProvider value={rootStore}>
+        <App />
+      </StoreProvider>
+    </React.StrictMode>
+  </BrowserRouter>
 );

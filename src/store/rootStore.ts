@@ -1,15 +1,12 @@
-import { types, Instance } from 'mobx-state-tree';
-import { createContext } from 'react';
-import { Test } from './models/test';
+import { Instance, types } from "mobx-state-tree";
+import { createContext } from "react";
 
 export const rootStore = types
-	.model({
-		test: types.optional(Test, {}),
-	})
-	.create({});
+  .model({})
+  .create({});
 
 export const RootStoreContext = createContext<null | Instance<
-	typeof rootStore
+  typeof rootStore
 >>(null);
 
 export const StoreProvider = RootStoreContext.Provider;
