@@ -19,7 +19,7 @@ export const History = observer(() => {
           .sort((a, b) => b.amount - a.amount)
           .map((expense) => {
             return (
-              <ListItem>
+              <ListItem key={expense.category}>
                 {expense.category} - <span>{expense.amount}</span>
               </ListItem>
             );
