@@ -1,11 +1,11 @@
 import React from "react";
-import { observer } from "mobx-react-lite";
 import { Navigate, Route, Routes } from "react-router-dom";
+
 import { History } from "./pages/history";
 import { AppLayout } from "./app-layout";
 import { AddCosts } from "./pages/add-costs";
 
-export const App = observer(() => {
+export const App = () => {
   return (
     <AppLayout>
       <Routes>
@@ -15,4 +15,4 @@ export const App = observer(() => {
       </Routes>
     </AppLayout>
   );
-});
+};
