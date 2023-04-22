@@ -40,12 +40,12 @@ export const AddCosts = () => {
       />
       <Input
         value={expense.category}
-        placeholder={"Введите категорию расходов"}
+        placeholder={"Категория расходов"}
         onChange={(e) => handleChange("category", e.target.value)}
       />
       <Input
         value={expense.amount ? String(expense.amount) : ""}
-        placeholder={"Введите сумму расходов"}
+        placeholder={"Сумма расходов"}
         onChange={(e) => handleChange("amount", +e.target.value)}
       />
       <Button label={"Добавить"} onClick={() => handleClick(expense)} />
