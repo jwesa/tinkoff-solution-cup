@@ -12,8 +12,8 @@ export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
 `;
 
 export const ListItem = styled.div`

@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Wrapper } from "./datepicker.styled";
+
 import DatePicker from "react-datepicker";
 
 interface Props {
@@ -7,5 +10,9 @@ interface Props {
 }
 
 export const Datepicker = ({ selected, onChange }: Props) => {
-  return <DatePicker selected={selected} onChange={onChange} />;
+  return (
+    <Wrapper>
+      <DatePicker selected={selected} onChange={onChange} />
+    </Wrapper>
+  );
 };

@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
   padding-top: 40px;
   background-color: #ffffff;
   border-right: 1px solid #d9d9d9;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.8rem;
+  line-height: 2rem;
   color: #363683;
 `;
 
