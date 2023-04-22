@@ -44,7 +44,7 @@ export const AddCosts = () => {
         onChange={(e) => handleChange("category", e.target.value)}
       />
       <Input
-        value={String(expense.amount)}
+        value={expense.amount ? String(expense.amount) : ""}
         placeholder={"Введите сумму расходов"}
         onChange={(e) => handleChange("amount", +e.target.value)}
       />
