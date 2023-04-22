@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tinkoff-solution-cup/precache-manifest.eac34284de1bd61deecb5eb8930a13fc.js"
+  "/tinkoff-solution-cup/precache-manifest.dbea68c6d3861c15c64270b14367d2dc.js"
 );
 
 workbox.clientsClaim();
