@@ -39,18 +39,14 @@ export const AddCosts = () => {
         }}
       />
       <Input
-        // value={expense.category}
+        value={expense.category}
         placeholder={"Введите категорию расходов"}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          handleChange("category", e.target.value)
-        }
+        onChange={(e) => handleChange("category", e.target.value)}
       />
       <Input
-        // value={String(expense.amount)}
+        value={String(expense.amount)}
         placeholder={"Введите сумму расходов"}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          handleChange("amount", +e.target.value)
-        }
+        onChange={(e) => handleChange("amount", +e.target.value)}
       />
       <Button label={"Добавить"} onClick={() => handleClick(expense)} />
     </Wrapper>

@@ -3,11 +3,13 @@ import { StyledInput } from "./input.styled";
 
 interface Props {
   // TODO временно
-  // value: string;
+  value: string;
   placeholder: string;
-  onChange: any;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Input = ({ placeholder, onChange }: Props) => {
-  return <StyledInput placeholder={placeholder} onChange={onChange} />;
+export const Input = ({ value, placeholder, onChange }: Props) => {
+  return (
+    <StyledInput value={value} placeholder={placeholder} onChange={onChange} />
+  );
 };

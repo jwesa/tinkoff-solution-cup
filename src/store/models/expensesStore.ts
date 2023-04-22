@@ -15,9 +15,9 @@ export const ExpensesStore = types
     list: types.optional(types.array(ExpenseModel), mockData),
   })
   .views((self) => ({
-    // get totalExpenses() {
-    //   return self.list.reduce((a, b) => a.amount + b.amount, 0);
-    // },
+    get total() {
+      return self.list.reduce((a, b) => a + b.amount, 0);
+    },
   }))
   .actions((self) => ({
     addCost(cost: IExpense) {

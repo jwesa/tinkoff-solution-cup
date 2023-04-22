@@ -1,5 +1,5 @@
 export const mockData = [
-  { date: new Date(), amount: 50, category: "Services" },
-  { date: new Date(), amount: 120, category: "Food" },
-  { date: new Date(), amount: 200, category: "Rent" },
+  { date: new Date(), amount: 1750, category: "Подписки на сервисы" },
+  { date: new Date(), amount: 15000, category: "Еда" },
+  { date: new Date(), amount: 35000, category: "Аренда жилья" },
 ];
