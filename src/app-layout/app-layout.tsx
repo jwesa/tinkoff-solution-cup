@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Navbar } from "./components/navbar";
-import { Body } from "../components/body";
+import { Navbar, Body } from "./components";
 
 interface Props {
   children: React.ReactElement | React.ReactElement[];
