@@ -21,6 +21,20 @@ export const ExpensesStore = types
   }))
   .actions((self) => ({
     addCost(cost: IExpense) {
-      self.list.push(cost);
+      let categoryExisting = false;
+
+      self.list.map((item) => {
+        if (
+          cost.category.toLowerCase().trim() ===
+          item.category.toLowerCase().trim()
+        ) {
+          item.amount += cost.amount;
+          categoryExisting = true;
+        }
+      });
+
+      if (!categoryExisting) {
+        self.list.push(cost);
+      }
     },
   }));
