@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b68632c6a04efaff5061",
+    "revision": "cb25f6437f1d36ba8f7b",
     "url": "/tinkoff-solution-cup/static/css/main.670aee81.chunk.css"
   },
   {
-    "revision": "b68632c6a04efaff5061",
-    "url": "/tinkoff-solution-cup/static/js/main.b4f64296.chunk.js"
+    "revision": "cb25f6437f1d36ba8f7b",
+    "url": "/tinkoff-solution-cup/static/js/main.ecc6c460.chunk.js"
   },
   {
     "revision": "12da776ccdcb61d0e79c",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/tinkoff-solution-cup/static/js/2.5e6264cc.chunk.js"
   },
   {
-    "revision": "b52e1d223566553a71ef386b8b782906",
+    "revision": "40f1216411be2be6b220396c527dbbea",
     "url": "/tinkoff-solution-cup/index.html"
   }
 ];
