@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Body } from "./components";
+import { Body, Navbar, Title } from "./components";
 
 interface Props {
   children: React.ReactElement | React.ReactElement[];
@@ -10,7 +10,12 @@ export const AppLayout = ({ children }: Props) => {
   return (
     <>
       <Navbar />
-      <Body>{children}</Body>
+      <Body>
+        <>
+          <Title />
+          {children}
+        </>
+      </Body>
     </>
   );
 };

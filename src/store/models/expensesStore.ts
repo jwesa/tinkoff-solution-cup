@@ -1,4 +1,7 @@
 import { types } from "mobx-state-tree";
+
+import { mockData } from "../../constants";
+
 import { IExpense } from "../../types";
 
 const ExpenseModel = types.model({
@@ -9,8 +12,13 @@ const ExpenseModel = types.model({
 
 export const ExpensesStore = types
   .model({
-    list: types.optional(types.array(ExpenseModel), []),
+    list: types.optional(types.array(ExpenseModel), mockData),
   })
+  .views((self) => ({
+    // get totalExpenses() {
+    //   return self.list.reduce((a, b) => a.amount + b.amount, 0);
+    // },
+  }))
   .actions((self) => ({
     addCost(cost: IExpense) {
       self.list.push(cost);

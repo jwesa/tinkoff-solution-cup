@@ -3,6 +3,7 @@ import { StyledInput } from "./input.styled";
 
 interface Props {
   // TODO временно
+  // value: string;
   placeholder: string;
   onChange: any;
 }
